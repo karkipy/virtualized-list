@@ -10,12 +10,13 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "webpack-dev-server --host 0.0.0.0 --port 3001",
+    "start": "webpack-dev-server --host 0.0.0.0 --port 3000",
     "build": "webpack"
   },
   "dependencies": {
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "virtualized-list-skeleton": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
