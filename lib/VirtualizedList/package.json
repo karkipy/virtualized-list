@@ -1,8 +1,12 @@
 {
-  "name": "virtualized-list",
+  "name": "virtualized-list-skeleton",
   "version": "1.0.0",
   "main": "src/index.js",
   "author": "Aashish Karki",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "peerDependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
 }
