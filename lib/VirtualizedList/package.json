@@ -1,0 +1,8 @@
+{
+  "name": "virtualized-list",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "Aashish Karki",
+  "license": "MIT",
+  "private": false
+}
