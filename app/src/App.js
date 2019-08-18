@@ -20,6 +20,7 @@ function App() {
       <input type="number" onChange={e => changeHandler(e.target.value)} placeholder="number of data to render" value={data.length} /> <br />
       <VirtualizedList
         data={data}
+        keyExtractor={(item) => item}
         renderItem={(item) => {
           return (
             <div style={{ margin: '30px', background: 'lightgray' }}>
