@@ -50,10 +50,14 @@ change the styling of the component
   import React from 'react';
   import VirtualizedList from 'virtualized-list-skeleton';
 
+  const data = Array(10).fill(null).map((d, idx) => idx);
+
   function App() {
     return (
       <VirtualizedList
         data={data}
+        // returns individual item from the list you send
+        keyExtractor={(item) => item}
         renderItem={(item) => {
           return (
             <div style={{ margin: '30px', background: 'lightgray' }}>
@@ -65,8 +69,9 @@ change the styling of the component
     );
   }
 
-```
+  export default App;
 
+```
 ## Output
 
 <img width="709" alt="Screen Shot 2019-08-18 at 7 54 57 PM" src="https://user-images.githubusercontent.com/12614476/63228404-3d96be80-c212-11e9-89b0-7d1358d9cb7a.png">
