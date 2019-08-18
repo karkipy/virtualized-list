@@ -2,7 +2,11 @@
   display: flex !important;
   width: 100% !important;
   position: relative !important;
-  height: 300px;
   overflow-y: scroll;
   flex-direction: column;
+}
+
+.virtualized-list-item {
+  display: flex !important;
+  width: 100% !important;
 }
