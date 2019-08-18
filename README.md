@@ -16,8 +16,6 @@ This is a skeleton for a virtualized list component. Highly influnced by react n
 ```javascript
   npm install virtualized-list-skeleton
 ```
-
-
 ## Props
 
 1. data: array of the options to render in list
@@ -37,10 +35,35 @@ change the styling of the component
 
 
 
+## Demo
+
+```javascript
+  import React from 'react';
+  import VirtualizedList from 'virtualized-list-skeleton';
+
+  function App() {
+    return (
+      <VirtualizedList
+        data={data}
+        renderItem={(item) => {
+          return (
+            <div style={{ margin: '30px', background: 'lightgray' }}>
+              {item}
+            </div>
+          );
+        }}
+      />
+    );
+  }
+
+```
+
 ## Output
 
-![alt typeahead in use](assets/first.png)
+<img width="709" alt="Screen Shot 2019-08-18 at 7 54 57 PM" src="https://user-images.githubusercontent.com/12614476/63228404-3d96be80-c212-11e9-89b0-7d1358d9cb7a.png">
 
-![alt typeahead on select](assets/second.png)
+
+<img width="783" alt="Screen Shot 2019-08-18 at 7 55 19 PM" src="https://user-images.githubusercontent.com/12614476/63228405-3e2f5500-c212-11e9-9360-f8a15cf8d7da.png">
+
 
 
