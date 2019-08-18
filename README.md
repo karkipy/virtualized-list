@@ -2,6 +2,15 @@
 
 http://bit.ly/2Hch6XW
 
+
+## Demo app
+
+```javascript
+yarn
+
+yarn start
+```
+
 ## About
 
 This is a skeleton for a virtualized list component. Highly influnced by react native's flat list
