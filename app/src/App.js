@@ -1,15 +1,22 @@
 import React from 'react';
-// import TypeAhead from 'typeahead-react-skeleton';
+import VirtualizedList from 'virtualized-list-skeleton';
 import './App.css';
 
 
 function App() {
   return (
-    <div style={{ margin: '100px', width: '600px' }}>
-      {/* <TypeAhead
-        options={['Apple', 'Aeroplane', 'Ball', 'Basker']}
-        onSelect={v => alert(`You selected ${v}`)}
-      /> */}
+    <div style={{ margin: '100px', width: '600px', background: 'red' }}>
+      <VirtualizedList
+        data={['Apple', 'Aeroplane', 'Ball', 'Basker']}
+        renderItem={(item) => {
+          console.log(item);
+          return (
+            <div>
+
+            </div>
+          );
+        }}
+      />
     </div>
   );
 }
